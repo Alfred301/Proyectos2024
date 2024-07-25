@@ -1,0 +1,112 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: "Oswald", sans-serif;
+    color: #000;
+}
+
+body{
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(54, 145, 216);
+}
+
+.content{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    min-height: 80dvh;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+.content:hover{
+    box-shadow: 0 0 30px black;
+}
+
+
+.content__title{
+    font-size: 40px;
+    border-bottom: 3px solid #000;
+    background-color: #000;
+    color: #fff;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.content__form{
+    display: flex;
+    justify-content: space-around;
+    
+    box-sizing: border-box;
+    padding: 20px 0;
+    border-bottom: 2px solid #000;
+}
+
+.content__form input{
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 0 50px;
+    transition: background-color 1s ease;
+}
+
+.content__form input:focus{
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+.content__form button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+.content__lista{
+    max-height: 60dvh;
+    overflow-x: auto;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+
+
+}
+
+.content__lista li{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+
+}
+
+.btn{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-eliminar{
+    background-image: url(icon/borrar.png);
+
+}
+
+.btn-editar{
+    background-image: url(icon/lapiz.png);
+
+}
+
+.btn-enviar{
+    background-image: url(icon/boton-agregar.png);
+
+}
