@@ -1,0 +1,66 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    height: 100dvh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 90%;
+    width: 90%;
+
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(6, minmax(100px, 1fr));
+    grid-gap: 10px;
+
+    border: 2px solid black;/*Borras*/
+}
+
+.card{
+    background-color: fuchsia;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card__dentro{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: 1s;
+}
+
+.card__fontA{
+    background-color: rgb(132, 157, 221);
+    transform: perspective(500px) rotateY(0deg);
+}
+
+.card__fontB{
+    background-color: gold;
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .card__fontA{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .card__fontB{
+    
+    transform: perspective(500px) rotateY(360deg);
+}

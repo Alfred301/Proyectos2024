@@ -8,11 +8,13 @@ document.getElementById('formulario').addEventListener('submit', function(event)
     if(aux){
         let ul = document.getElementById('listaTareas');
         let li = document.createElement('li');
+
         let checkBox = document.createElement('input');
         checkBox.type = 'checkbox';
 
         let span = document.createElement('span');
         span.textContent = aux;
+        span.classList.add('spanContenido');
 
         let buttonDelete = document.createElement('button');
         buttonDelete.classList.add('btn', 'btn-eliminar');
@@ -73,10 +75,21 @@ document.getElementById('tarea').addEventListener('focus', function(event){
     let lista = ul.getElementsByTagName('li');
     let spa = ul.getElementsByTagName('span');
 
+    let checkboxes = ul.getElementsByTagName('input');
+
     
     for (let i = 0; i < spa.length; i++) {
-        spa[i].style.color = "white";
+
+        if(checkboxes[i].checked){  
+            
+            spa[i].style.color = "gray";
+
+        }else{
+            
+            spa[i].style.color = "white";
+        }
     }
+    
 });
 
 
@@ -87,10 +100,16 @@ document.getElementById('tarea').addEventListener('blur', function(event){
     let ul = document.getElementById('listaTareas');
     let lista = ul.getElementsByTagName('li');
     let spa = ul.getElementsByTagName('span');
+    
+    let checkboxes = ul.getElementsByTagName('input');
 
     
     for (let i = 0; i < spa.length; i++) {
-        spa[i].style.color = "black";
+        if(checkboxes[i].checked){  
+            spa[i].style.color = "gray";
+        }else{
+            spa[i].style.color = "black";
+        }
     }
 });
 

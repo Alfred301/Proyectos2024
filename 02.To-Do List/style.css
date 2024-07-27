@@ -21,13 +21,15 @@ body{
     min-height: 80dvh;
     box-sizing: border-box;
     border-radius: 20px;
+
+    border-bottom-right-radius: 10px;
     transition: background-color 0.5s ease, box-shadow 0.5s ease;
+
 }
 
 .content:hover{
     box-shadow: 0 0 30px black;
 }
-
 
 .content__title{
     font-size: 40px;
@@ -45,12 +47,15 @@ body{
     box-sizing: border-box;
     padding: 20px 0;
     border-bottom: 2px solid #000;
+
+    
 }
 
 .content__form input{
     font-size: 15px;
     border-radius: 10px;
-    padding: 0 50px;
+    width: 60%;
+    text-align: center;
     transition: background-color 1s ease;
 }
 
@@ -65,13 +70,14 @@ body{
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    
 }
 
 
 
 
 .content__lista{
-    max-height: 60dvh;
+    max-height: 70dvh;
     overflow-x: auto;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
@@ -84,6 +90,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin: 15px 0;
 
 }
@@ -109,4 +116,42 @@ body{
 .btn-enviar{
     background-image: url(icon/boton-agregar.png);
 
+}
+
+
+.spanContenido{
+    min-width: 150px;
+    max-width: 150px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+
+    border-left: 2px solid black;
+}
+
+
+::-webkit-scrollbar-thumb{
+    border-bottom-right-radius: 100px;
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(34, 94, 141));
+}
+
+
+@media screen and (min-width:720px) {
+    .content{
+        width: 50%;
+    }
+}
+
+
+@media screen and (min-width:1282px) {
+    .content{
+        width: 30%;
+    }
 }
