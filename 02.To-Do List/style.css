@@ -24,7 +24,6 @@ body{
 
     border-bottom-right-radius: 10px;
     transition: background-color 0.5s ease, box-shadow 0.5s ease;
-
 }
 
 .content:hover{
