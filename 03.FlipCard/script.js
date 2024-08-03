@@ -56,15 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
         //Si son iguales entran aqui
         if (img1 === img2) {
 
-
-//ACA SE ACTIVA EL CLIC
             //Hacemos un retraso en carga
             setTimeout(() => {
-
-                //Los ocultamos
-                //card1.style.visibility = 'hidden';
-                //card2.style.visibility = 'hidden';
-                
                 
                 card1.classList.remove('flipped');
                 card2.classList.remove('flipped');
@@ -75,8 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 card1.classList.remove('visility');
                 card2.classList.remove('visility');
                 
-                
-               
                 flippedCards = [];  //Vaciamos los temporales
                 score++;
                 updateScore(); //Actulizamos y nos vamos
