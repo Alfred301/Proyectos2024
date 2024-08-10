@@ -1,0 +1,53 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lobster", sans-serif;
+}
+
+body{
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image: url('img/fondoReloj.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.content{
+    background-color: rgb(0, 0, 0);
+    font-size: 60px;
+    padding: 50px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px black;
+    transition: box-shadow 1s ease, color 1s ease;
+    cursor: pointer;
+    user-select: none;
+}
+
+.content:hover{
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    color: white;
+}
+
+.content__hora{
+    border: 10px double rgb(0, 0, 0);
+    border-radius: 20px;
+    transition: border 1s ease;
+}
+
+.content:hover .content__hora{
+    border: 10px double rgb(255, 255, 255);
+}
+
+.content__title{
+    width: 100%;
+    border-top: 5px solid black;
+    margin-bottom: 5px;
+}
+
