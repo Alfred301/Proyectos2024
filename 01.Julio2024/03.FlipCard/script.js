@@ -3,8 +3,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     //Cargamos las imagenes
 
-    
-
     const images = ['./cartas/img1.png','./cartas/img2.png','./cartas/img3.png','./cartas/img4.png','./cartas/img5.png','./cartas/img6.png','./cartas/img7.png','./cartas/img8.png','./cartas/img9.png','./cartas/img10.png'];
 
     //Contador de cartass

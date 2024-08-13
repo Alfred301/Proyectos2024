@@ -1,0 +1,227 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anton", sans-serif;
+}
+
+html, body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    min-width: 100dvw;
+    text-align: center;
+}   
+
+body{
+    background-image: url(img/fondo.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    display: initial;
+    background-color: white;
+    border-radius: 30px;
+    transition: box-shadow 1s ease;
+    width: 70%;
+}
+
+.content:hover{
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.content__piedra, .content__papel, .content__tijera, #tu, #compu{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    
+}
+
+.content__human, .content__pc, h1, h2, #result{
+    user-select: none;
+}
+
+.content__human, .content__pc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#id-piedra{
+    background-image: url("img/piedra.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#id-papel{
+    background-image: url("img/papel.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#id-tijera{
+    background-image: url("img/tijeras.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.imgElementos{
+    position: relative;
+    top: 8px;
+    height: 60px;
+    width: 60px;
+}
+
+#puntaje-humano, #puntaje-pc{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 10px 20px;
+    box-shadow: 0 0 12px rgb(117, 116, 113);
+    width: 50px;
+    height: 50px;
+}
+
+#result{
+    width: 100%;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    background: rgb(0, 0, 0);
+
+    height: 5dvh;
+
+    transition: color 0.5s ease;
+}
+
+h1{
+    border-bottom: 5px solid black;
+    padding: 15px 0;
+}
+
+.content__human, .content__pc{
+    width: 100%;
+}
+
+.title{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.title, #compu, #tu{
+    margin-right: 25px;
+}
+
+#resetear{
+    margin: 25px 0;
+    padding: 5px 40px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: rgb(114, 65, 69);
+    color: white;
+    transition: box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+#resetear:hover{
+    box-shadow: 0 0 10px rgb(149, 63, 70);
+}
+
+.content__piedra, .content__papel, .content__tijera{
+    margin: 25px 0;
+}
+
+#emergente{
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 50dvw;
+    height: 40dvh;
+    border-radius: 30px;
+    border: 2px solid black;   
+    z-index: 100;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    
+}
+
+#emergente__title{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgb(208, 208, 208);
+    
+}
+
+#emergente__boton{
+    box-shadow: 0 0 0 black;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 30px;
+    transition: box-shadow 0.7s ease;
+    cursor: pointer;
+}
+
+#emergente__boton:hover{
+    box-shadow: 0 0 10px white;
+}
+
+
+@media screen and (min-width: 630px){
+    .content{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (min-width: 1000px){
+    .content{
+        width: 40%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+<!--Proyecto Juego Piedra, Papel y Tijera-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Anton+SC&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gupter:wght@400;500;700&family=Lobster&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logoGame.png">
+
+    <title>Piedra - Papel - Tijera</title>
+</head>
+<body>
+
+    <div id="emergente">
+        <div id="emergente__title">Ganas</div>
+        <button id="emergente__boton">Volver a jugar</button>
+    </div>
+
+    <div class="content" id="contenido">
+
+        <h1 class="content__title">Piedra - Papel - Tijera</h1>
+        
+        <button class="content__piedra" id="id-piedra"></button>
+        <button class="content__papel" id="id-papel"></button>
+        <button class="content__tijera" id="id-tijera"></button>
+
+        <div class="content__human">
+            <div class="title">Tu</div>
+            <div id="tu"></div>
+            <div id="puntaje-humano"></div>
+        </div>
+            
+        <h2>VS</h2>
+            
+        <div class="content__pc">
+            <div class="title">PC</div>
+            <div id="compu"></div>
+            <div id="puntaje-pc"></div>
+        </div>
+
+        <button id="resetear">Resetear</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
