@@ -170,7 +170,6 @@ document.getElementById('id-tijera').addEventListener("click", function(event){
 
 
 document.getElementById('resetear').addEventListener('click', function(event){
-
     limpiar();
 });
 
