@@ -1,0 +1,91 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body{
+    min-height: 100dvh;
+    min-width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(103, 159, 87);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(255, 255, 255);
+    width: 90dvw;
+    height: 100%;
+    border-radius: 2rem;
+    border: 0.2rem solid black;
+}
+
+.content h1{
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    border-bottom: 0.2rem solid black;
+    user-select: none;
+}
+
+input, button{
+    margin: 1rem 0;
+    width: 50%;
+}
+
+input{
+    font-size: 0.95rem;
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
+button{
+    font-size: 1.4em;
+    width: 50%;
+    border-radius: 1.5rem;
+    transition: background-color 1s ease;
+    cursor: pointer;
+}
+
+#content__result{
+    text-align: center;
+    font-size: 1.5rem;
+    width: 100%;
+    background-color: rgb(103, 159, 87);
+    border-bottom-left-radius: 1.7rem;
+    border-bottom-right-radius: 1.7rem;
+    height: inherit;
+    overflow-x: auto;
+    user-select: none;
+}
+
+#btn-convertir:hover{
+    background-color: rgb(126, 163, 126);
+}
+
+#btn-limpiar:hover{
+    background-color: rgb(181, 146, 146);
+}
+
+
+@media screen and (min-width: 700px){
+    .content{
+      width: 60%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+        
+    .content{
+      width: 40%;
+    }
+}
