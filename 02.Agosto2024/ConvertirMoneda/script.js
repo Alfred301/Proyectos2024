@@ -11,7 +11,7 @@ function funcionalidad(moneda1, moneda2, valor){
     const amount = valor
 
     //Solicitamos la data en la pagina, con nuestra api, y las monedas a convertir
-    const url = `http://api.currencylayer.com/live?access_key=${apiKey}&currencies=${targetCurrency}&source=${baseCurrency}`;
+    const url = `https://api.currencylayer.com/live?access_key=${apiKey}&currencies=${targetCurrency}&source=${baseCurrency}`;
 
     //Llamamos a esa URL
     fetch(url)
@@ -29,7 +29,7 @@ function funcionalidad(moneda1, moneda2, valor){
         limpiar();
     }
     })
-    .catch((error) => console.error("Error en la solicitud:", error)); // En caso no se pueda acceder al API
+    .catch((error) => alert.error("Error en la solicitud:", error)); // En caso no se pueda acceder al API
 }
 
 //Limpieza
