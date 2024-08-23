@@ -29,7 +29,7 @@ function funcionalidad(moneda1, moneda2, valor){
         limpiar();
     }
     })
-    .catch((error) => alert.error("Error en la solicitud:", error)); // En caso no se pueda acceder al API
+    .catch((error) => console.error("Error en la solicitud: ", error)); // En caso no se pueda acceder al API
 }
 
 //Limpieza
