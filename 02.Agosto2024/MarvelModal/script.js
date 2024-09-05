@@ -14,8 +14,6 @@ for (let i = 0; i < thumbnails.length; i++) {
     modal.style.display = "block";
     modalImg.src = this.src; // Pasamos la imagen de donde dimos click
     captionText.innerHTML = this.alt; // Pasamos el alt de la imagen
-    
-    document.getElementById("description").style.color = "white";
   }
 }
 

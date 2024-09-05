@@ -25,7 +25,7 @@ function funcionalidad(moneda1, moneda2, valor){
         //Ingresamos el resultado
         document.getElementById('content__result').innerHTML = `${amount} ${baseCurrency} => ${convertedAmount.toFixed(3)} ${targetCurrency}`;
         } else {
-        alert("El tipo de moneda no existe"); // En caso las monedas no sean validas
+        alert("El tipo de moneda no existe o el API esta agotado de uso."); // En caso las monedas no sean validas
         limpiar();
     }
     })
