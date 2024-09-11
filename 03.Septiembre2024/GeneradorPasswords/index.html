@@ -1,19 +1,87 @@
+<!--Generador de Contraseñas-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="img/iconn.png">
     <title>Generador de Contraseñas</title>
 </head>
 <body>
 
     <div class="content">
 
-        <div>Generador</div>
+        <div class="content__title">Generador de Contraseñas</div>
 
-        <button>Generar</button>
-        <div class="content">Aqui Respuesta</div>
+        <!--Opciones de Mayuscula, Minuscula, Numeros, Simbolos-->
+        <div class="content__valor">    
+            <div>    
+                <label>Mayusculas</label>
+                <input class="checkCarac" type="checkbox" id="content__mayuscula" disabled checked>
+            </div>
+            
+            <div>
+                <label>Minusculas</label>
+                <input class="checkCarac" type="checkbox" id="content__minuscula" disabled checked>
+            </div>
+            
+            <div>    
+                <label>Numeros</label>
+                <input class="checkCarac" type="checkbox" id="content__numero" disabled>
+            </div>
+
+            <div>
+                <label>Simbolos</label>
+                <input class="checkCarac" type="checkbox" id="content__simbolo" disabled>
+            </div>
+        </div>
+
+        <!--Eleccion de Facil, Medio, Dificil-->
+        <div class="content__option">
+            <div>
+                <label>Facil de HACKEAR</label>
+                <input class="checkFun" onclick="checkFacil()" type="checkbox" id="checkedFacil" checked>
+            </div>
+    
+            <div>
+                <label>Medio facil Medio dificil</label>
+                <input class="checkFun" onclick="checkMedio()" type="checkbox" id="checkedMedio">
+            </div>
+    
+            <div>
+                <label>Dificil de HACKEAR</label>
+                <input class="checkFun" onclick="checkDificil()" type="checkbox" id="checkedDificil">
+            </div>
+        </div>
+        
+        <!--Muestra final de Caracteres, boton y respuesta-->
+        <div class="content__end">
+
+            <div class="content__character">
+                <label>Caracteres: </label>
+                <div id="content__cantidad">8</div>
+            </div>
+
+            <div>
+                <input type="range" id="rangeInput" min="8" max="30" value="8" oninput="updateNumber()">
+            </div>
+
+            <button id="content__generar">Generar</button>
+
+            <div class="content__respuesta">
+                <div id="content__rpta"></div>
+                <button id="contentButtonCopy" onclick="copyToClipboard()"></button>
+            </div>
+
+        </div>
+
 
     </div>
 

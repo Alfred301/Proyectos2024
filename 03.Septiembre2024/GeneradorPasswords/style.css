@@ -1,0 +1,194 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+body{
+    min-height: 100dvh;
+    min-width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(img/gifHacker.gif);
+    background-size: cover;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    border-radius: 1.5em;
+    box-shadow: 0 0 1em white;
+}
+
+.content__valor{
+
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 0.1em solid white;
+    border-bottom: 0.1em solid white;
+
+    font-size: 1em;
+    padding: 1em;
+
+    
+    user-select: none;
+}
+
+.content__title{
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0.5em;
+    
+    user-select: none;
+}
+
+.content__option{
+    text-align: center;
+    width: 100%;
+    border-bottom: 0.1em solid white;
+    padding: 1em;
+    user-select: none;
+}
+
+.content__character, .content__respuesta{
+    display: flex;
+}
+
+#content__rpta{
+    min-width: 5rem;
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(207, 230, 75);
+    border-radius: 1rem;
+    color: rgb(207, 230, 75);
+    padding: 0 0.7em;
+}
+
+input[type="checkbox"] {
+    appearance: none; /* Elimina el estilo predeterminado */
+    width: 18px;
+    height: 18px;
+    border-radius: 4px; /* Bordes redondeados */
+    background-color: rgb(255, 255, 255); /* Color de fondo del checkbox sin seleccionar */
+
+    cursor: pointer;
+}
+
+input[type="checkbox"].checkCarac:checked {
+    background-color: gray;
+    
+    cursor: default;
+}
+
+input[type="checkbox"].checkFun:checked {
+    background-color: #93d27e;
+    
+}
+
+.content__valor label{
+    position: relative;
+    bottom: 0.2em;
+}
+
+.content__end{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    user-select: none;
+}
+
+#rangeInput, #content__generar{
+    margin-bottom: 1em;
+}
+
+#contentButtonCopy{
+    background-image: url(img/dupdo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 30px;
+    border-radius: 0.4em;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+#content__generar{
+    font-size: 1em;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    text-transform: uppercase;
+
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+#content__generar:hover{
+    background-color: rgb(207, 230, 75);
+}
+
+
+#content__rpta{
+    
+    max-width: 300px;
+    height: 2em;
+    word-wrap: break-word;
+
+}
+
+/*Media Query*/
+
+@media screen and (min-width:714px) {
+    .content{
+        width: 70%;
+    }    
+}
+
+@media screen and (min-width:890px) {
+    .content{
+        width: 60%;
+    }    
+}
+
+@media screen and (min-width:1094px) {
+    .content{
+        width: 50%;
+    }    
+}
+
+@media screen and (min-width:1300px) {
+    .content{
+        width: 45%;
+    }    
+}
+
+@media screen and (max-width:400px) {
+    #content__rpta{
+        max-width: 15em;
+        overflow: auto;
+
+    } 
+
+    #content__rpta ::-webkit-scrollbar{
+        display: none;
+    } 
+
+
+   
+}
