@@ -1,0 +1,62 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;  
+    font-family: "Handjet", sans-serif;
+}
+
+body{
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    gap: 10px;
+}
+
+h1{
+    grid-row: 1/2;
+    grid-column: 1/5;
+
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+a{
+    border: 1px solid rgb(130, 116, 116);
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    border-radius: 2em;
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgb(44, 42, 42);
+    cursor: pointer;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    transition: box-shadow 0.5s ease, color 0.5s ease;
+
+}
+
+a:hover{
+    box-shadow: 0 0 5px gold;
+    color: gold;
+}
