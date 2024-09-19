@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/VideosMotivacion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="../media/img/icon.png">
+
+    <title>Videos Motivadores</title>
+        
+</head>
+<body>
+
+    <div class="content">
+        <h1>¡Motivate!</h1>        
+        <div>  
+            <button id="generate-btn">Generar Video</button>
+            <a href="../index.html"><img src="../media/img/cerrar.png"></a>
+        </div>
+        
+        <!--Video aleatorio-->
+        <div class="content__frame">
+            <iframe id="video-frame" src="" frameborder="0" allowfullscreen style="display: none;"></iframe>
+        </div>
+        
+        <!--ID del video aleatorio-->
+        <div id="numero__id"></div>
+    </div>
+    
+    <script src="../js/VideosMotivacion.js"></script>
+</body>
+</html>

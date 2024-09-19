@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../style/Frases.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="../media/img/icon.png">
+    <title>Frases Reflexivas</title>
+</head>
+<body>
+    
+    <div class="content">
+
+        <!--4 Botones principales-->
+        <div class="player">
+            <div class="player__one">
+                <button class="button__music" onclick="playMusic()">▶ Dale</button>
+                <button class="button__music" onclick="pauseMusic()">⏸ Pausa</button>
+            </div>
+
+            <div class="player__two">
+                <button class="button__music" onclick="nextSong()">⏭ Siguiente</button>
+                <a href="../index.html"><img src="../media/img/cerrar.png"></a>
+            </div>    
+        </div>
+
+        <!--Seleccionamos el audio-->
+        <audio id="audioPlayer" loop>
+            <source src="" type="audio/mp3">
+        </audio>
+
+        <!--Titulo y boton-->
+        <div class="content__end">  
+            <h1>Frase Reflexiva</h1>
+            <button class="button__result" id="content__buttonFinal" onclick="newPhrase()">✨ Nuevo</button>
+        </div>
+
+        <!--Mensaje final-->
+        <div id="fraseAleatoria"></div>
+
+    </div>
+    
+
+
+    <script src="../js/Frases.js"></script>
+
+</body>
+</html>
+

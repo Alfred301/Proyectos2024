@@ -1,0 +1,59 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;  
+    font-family: "Handjet", sans-serif;
+}
+
+body{
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    user-select: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0 0 15px orange;
+}
+
+a{
+    border: 1px solid rgb(130, 116, 116);
+    width: 100px;
+    height: 50px;
+
+    margin: 1em;
+    border-radius: 2em;
+    text-align: center;
+    background-color: rgb(44, 42, 42);
+    cursor: pointer;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    transition: box-shadow 0.5s ease, color 0.5s ease;
+
+}
+
+a:hover{
+    box-shadow: 0 0 5px gold;
+    color: gold;
+}
