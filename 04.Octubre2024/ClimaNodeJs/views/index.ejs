@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>App del Clima</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    />
+
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/704/704845.png">
+  </head>
+  <body>
+    <div class="container">
+      <h1>App del clima con NodeJS</h1>
+      <form action="/clima" method="get">
+        <input type="text" name="city" placeholder="Nombre de ciudad" />
+        <button type="submit">Buscar clima</button>
+      </form>
+      <% if (error) { %>
+      <p class="error"><%= error %></p>
+      <% } else if (clima) { %>
+      <div class="card">
+        <p>
+          <i class="fas fa-thermometer-half"></i>
+          <%=clima.main.temp%>&deg;F
+        </p>
+        <p>
+          <i class="fas fa-cloud"></i>
+          <%=clima.weather[0].main%>
+        </p>
+
+        <p>
+          <i class="fas fa-map-marker-alt"></i>
+          <%=clima.name%>, <%=clima.sys.country%>
+        </p>
+      </div>
+      <% } %>
+    </div>
+  </body>
+</html>

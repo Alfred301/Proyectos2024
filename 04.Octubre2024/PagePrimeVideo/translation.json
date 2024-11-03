@@ -1,0 +1,52 @@
+{
+  "es": {
+    "nav__login__barTitle": "Mi cuenta",
+    "nav__login__barIdenti": "Identificarse",
+    "sectionText1": "17 nominaciones a los PRIMETIME EMMYS®",
+    "sectionText2": "Temporada 1",
+    "sectionParrafo1": "Basada en una de las franquicias de videojuegos más grande de todos los tiempos, Fallout es la historia de lo que se tiene y lo que no en un mundo donde ya no queda casi nada por tener. 200 años después del apocalipsis, la habitante pacífica de un cómodo refugio antinuclear se ve forzada a regresar a la superficie y se sorprende al descubrir lo que le espera en el yermo.",
+    "UL1-styleOne-1": "8 episodios",
+    "section__font-UL2-1": "Acción",
+    "section__font-UL2-2": "Aventura",
+    "section__font-UL2-3": "Ciencia ficción",
+    "section__font-UL2-4": "Drama",
+    "section-btn1": "Ver con Amazon Prime Video",
+    "section-btn2": "Inicia tu prueba gratis de 7 días",
+    "section__part4Text1": "Suscribirse a Prime",
+    "sectionParrafo2": "Se aplican términos"
+
+  },
+  "en": {
+    "nav__login__barTitle": "My account",
+    "nav__login__barIdenti": "Sign In",
+    "sectionText1": "PRIMETIME EMMYS® 17X nominee",
+    "sectionText2": "Season 1",
+    "sectionParrafo1": "Based on one of the greatest video games of all time, Fallout is the story of haves and have-nots in a world in which there’s almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the incredibly complex, gleefully weird and highly violent universe waiting for them above.",
+    "UL1-styleOne-1": "8 episodes",
+    "section__font-UL2-1": "Action",
+    "section__font-UL2-2": "Adventure",
+    "section__font-UL2-3": "Science Fiction",
+    "section__font-UL2-4": "Drama",
+    "section-btn1": "Watch with Prime Video",
+    "section-btn2": "Start your 7-day free trial",
+    "section__part4Text1": "Join Prime",
+    "sectionParrafo2": "Terms apply"
+
+  },
+  "fr": {
+    "nav__login__barTitle": "Mon compte",
+    "nav__login__barIdenti": "Identifiez-vous",
+    "sectionText1": "17 nominations aux PRIMETIME EMMYS®",
+    "sectionText2": "Saison 1",
+    "sectionParrafo1": "Adapté d'une des plus grandes franchises de l'histoire des jeux vidéo, Fallout suit le destin des nantis et des démunis vivant dans un monde où il ne reste presque rien à posséder. 200 ans après l'apocalypse, une paisible habitante d'un abri antiatomique est forcée d'aller s'aventurer à la surface... mais elle n'est pas prête pour ce que les Terres désolées lui réservent.",
+    "UL1-styleOne-1": "8 épisodes",
+    "section__font-UL2-1": "Action",
+    "section__font-UL2-2": "Aventure",
+    "section__font-UL2-3": "Science-fiction",
+    "section__font-UL2-4": "Drame",
+    "section-btn1": "Regarder avec Prime Video",
+    "section-btn2": "Commencez votre essai gratuit de 7 jours",
+    "section__part4Text1": "Inscrivez-vous à Amazon Prime",
+    "sectionParrafo2": "Des conditions s'appliquent"
+  }
+}
