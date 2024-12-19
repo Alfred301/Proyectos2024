@@ -205,6 +205,58 @@ body {
     background-image: url(mangas/1.Naze_Boku/img/naze_boku.jpg);
 }
 
+.--m2--Manga {
+    background-image: url(mangas/2.Mangas/manga2.jpg);
+}
+
+.--m3--Manga {
+    background-image: url(mangas/2.Mangas/manga3.jpg);
+}
+
+.--m4--Manga {
+    background-image: url(mangas/2.Mangas/manga4.jpg);
+}
+
+.--m5--Manga {
+    background-image: url(mangas/2.Mangas/manga5.jpg);
+}
+
+.--m6--Manga {
+    background-image: url(mangas/2.Mangas/manga6.jpg);
+}
+
+.--m7--Manga {
+    background-image: url(mangas/2.Mangas/manga7.jpg);
+}
+
+.--m8--Manga {
+    background-image: url(mangas/2.Mangas/manga8.jpg);
+}
+
+.--m9--Manga {
+    background-image: url(mangas/2.Mangas/manga9.jpg);
+}
+
+.--m10--Manga {
+    background-image: url(mangas/2.Mangas/manga10.jpg);
+}
+
+.--m11--Manga {
+    background-image: url(mangas/2.Mangas/manga11.jpg);
+}
+
+.--m12--Manga {
+    background-image: url(mangas/2.Mangas/manga12.jpg);
+}
+
+.--m13--Manga {
+    background-image: url(mangas/2.Mangas/manga13.jpg);
+}
+
+.--m14--Manga {
+    background-image: url(mangas/2.Mangas/manga14.jpg);
+}
+
 
 /*====================================================FOOTER INIT*/
 
@@ -518,6 +570,10 @@ iframe {
 
     transition: background-color 0.5s ease, color 0.5s ease;
 
+}
+
+.botones:nth-child(1) {
+    margin-bottom: 30px;
 }
 
 .botones a:hover {
