@@ -1,0 +1,526 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*====================================================HEADER INIT*/
+
+body {
+    background-color: rgb(233, 234, 237);
+}
+
+
+.header {
+    background-color: white;
+    color: black;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2em 0;
+}
+
+.header nav ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+}
+
+.header ul li {
+    list-style: none;
+}
+
+.header nav ul li a {
+    color: gray;
+    text-transform: uppercase;
+}
+
+.header nav ul li a:hover {
+    color: black;
+}
+
+.header .header__logo {
+    font-size: 1.3em;
+    color: #2e68e4;
+}
+
+.header input {
+    display: none;
+}
+
+.header__open-nav {
+    display: none;
+
+}
+
+.header__checkbox:checked~ul {
+    display: none;
+}
+
+
+/*====================================================HEADER QUERY*/
+
+
+@media screen and (max-width:991px) {
+
+    .header__open-nav {
+
+        display: flex;
+        font-size: 2.2em;
+        cursor: pointer;
+    }
+
+    .header__ul {
+        position: absolute;
+        top: 3.9em;
+        min-width: 100dvw;
+        min-height: 100dvh;
+        background-color: white;
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+}
+
+
+@media screen and (min-width:992px) {
+
+    .header__checkbox:checked~ul {
+        display: flex;
+    }
+
+
+}
+
+/*====================================================SECTION INIT*/
+
+.section {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    gap: 20px;
+
+}
+
+
+
+.section a {
+    text-decoration: none;
+    color: white;
+}
+
+.section__manga {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    width: 200px;
+    height: 290px;
+
+}
+
+.section__star {
+    background-image: url(media/estrella.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+
+}
+
+.section__title,
+.section__punctuation,
+.section__type1,
+.section__type2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__title {
+
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    font-size: 0.8em;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: rgb(0, 0, 0, 0.600);
+}
+
+.section__punctuation {
+    top: 0em;
+    left: 8.5em;
+    background-color: rgba(0, 0, 0, 0.600);
+    width: 4em;
+    padding: 2px;
+
+}
+
+.section__type1 {
+    background-color: #7986CB;
+    bottom: 1.3em;
+    left: 0.3em;
+    width: 4.5em;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 2px;
+    text-shadow: 0.9px 1.5px 1px black;
+
+}
+
+.section__type2 {
+    background-color: #f72a06da;
+    font-size: 1.1em;
+    top: 9.8em;
+    padding: 8px 0;
+}
+
+
+
+.--m1--Naze_Boku {
+    background-image: url(mangas/1.Naze_Boku/img/naze_boku.jpg);
+}
+
+
+/*====================================================FOOTER INIT*/
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #D1D2D2;
+
+    padding: 2em 0;
+    margin-top: 2.5em;
+    color: #2957BA;
+}
+
+.footer ul,
+.footer div {
+    width: 90%;
+    padding-bottom: 2em;
+}
+
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer h2 {
+    margin: 9px 0px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+
+    color: #2957BA;
+    font-size: 0.9em;
+}
+
+.footer ul li a:hover {
+    color: #1B3A7B;
+}
+
+.footer div p {
+    font-size: 0.9em;
+    color: rgb(66, 66, 66);
+}
+
+
+@media screen and (min-width:554px) {
+
+    .footer {
+        align-items: self-start;
+    }
+
+    .footer ul {
+        width: 45%;
+    }
+
+}
+
+@media screen and (min-width:800px) {
+
+    .footer {
+        align-items: self-start;
+    }
+
+    .footer ul,
+    .footer div {
+        width: 30%;
+    }
+
+}
+
+
+/*========================================== MANGA INIT*/
+
+.manga {
+
+    background: linear-gradient(to top, #7883B8, rgb(0, 0, 0));
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+
+}
+
+.manga .manga__part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.manga .manga__part2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2em;
+    text-align: justify;
+}
+
+.manga__part2 .cuatro {
+    margin-bottom: 3em;
+
+}
+
+.manga__part2 .uno,
+.manga__part2 .dos {
+    margin-bottom: 20px;
+}
+
+.manga .manga__imagen {
+    background-image: url("./mangas/1.Naze_Boku/img/naze_boku.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 90%;
+    height: 620px;
+
+}
+
+.manga .title1 {
+    background-color: #7986CB;
+    width: 91%;
+    text-align: center;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.manga .title2 {
+    background-color: rgba(234, 166, 40, 0.801);
+    width: 91%;
+    text-align: center;
+
+    position: relative;
+    bottom: 33px;
+    font-size: 1.4em;
+    padding: 4px 0;
+}
+
+
+@media screen and (min-width:632px) {
+
+    .manga {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .manga .title1,
+    .manga .title2,
+    .manga .manga__imagen {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (min-width:1157px) {
+
+    .manga .title1,
+    .manga .title2,
+    .manga .manga__imagen {
+        width: 85%;
+    }
+
+    .manga .manga__part1 {
+        width: 80%;
+    }
+
+    .manga .manga__part2 {
+        padding: 0;
+        padding: 0 5em;
+    }
+
+    .manga__part2 .cuatro {
+        margin-bottom: 0;
+
+    }
+}
+
+
+/*========================================== MANGA CAPITULO INIT*/
+
+.manga__cap {
+
+
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+    padding: 2em;
+
+    margin: 20px 0;
+
+
+    color: #2957BA;
+}
+
+.manga__cap h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+
+    width: 100%;
+}
+
+.manga__cap ul {
+    width: 100%;
+}
+
+.manga__cap ul li {
+    list-style-type: none;
+
+    background-color: white;
+    box-shadow: 0 0 3px black;
+
+    padding: 15px 20px;
+
+
+    transition: background-color 0.5s ease;
+}
+
+
+.manga__cap ul li:hover {
+    background-color: #eceef7;
+}
+
+.manga__cap ul li a {
+
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #2957BA;
+
+    transition: color 1s ease, font-size 1s ease;
+}
+
+.manga__cap ul li a:hover {
+
+    font-size: 1.25em;
+    color: #14357b;
+
+}
+
+@media screen and (min-width:1000px) {
+
+    .manga__cap {
+
+        padding: 2em 10em;
+
+
+    }
+}
+
+
+/*========================================== CAPITULOS INIT*/
+
+
+.lector {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdf-container {
+
+    height: 100vh;
+    width: 95%;
+
+
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.botones {
+
+    position: relative;
+    top: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones a {
+    border: 1px solid black;
+    font-size: 1.3em;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 10px;
+    text-decoration: none;
+    color: black;
+
+    transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+.botones a:hover {
+    background-color: rgb(21, 21, 21);
+    color: white;
+}
